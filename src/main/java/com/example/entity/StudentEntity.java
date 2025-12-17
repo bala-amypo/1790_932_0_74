@@ -38,17 +38,17 @@ public class StudentEntity{
   }
 
 
-  public void setage(int age)
+  public void setAge(int age)
   {
   this.age = age; 
   }
   
-  public void getName(String name)
+  public String getName(String name)
   {
      return name; 
   }
     
-  public void getEmail(String email)
+  public Srt getEmail(String email)
   {
      return email; 
   }
