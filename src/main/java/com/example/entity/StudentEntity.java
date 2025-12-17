@@ -16,6 +16,31 @@ public class StudentEntity{
   private String email;
   private float cgp; 
 
-  StudentEntity()
+  StudentEntity(Long id , String name , String email , float cgp)
+  {
+  this.id = id;
+  this.name = name;
+  this.email = email;
+  this.cgp = cgp; 
+
+  }
+
+
+  public void setName(String name)
+  {
+  this.name = name; 
+  }
+
+
+  public void setEmail(String Email)
+  {
+  this.n = name; 
+  }
+
+
+  public void setName(String name)
+  {
+  this.name = name; 
+  }
 
 }
