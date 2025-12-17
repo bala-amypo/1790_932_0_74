@@ -34,13 +34,30 @@ public class StudentEntity{
 
   public void setEmail(String Email)
   {
-  this.n = name; 
+  this.email = email; 
   }
 
 
-  public void setName(String name)
+  public void setcgp(String cgp)
   {
-  this.name = name; 
+  this.cgp = cgp; 
   }
+  
+  public void getname(String name)
+  {
+     return name; 
+  }
+    
+  public void getemail(String email)
+  {
+     return email; 
+  }
+  
+  public void getcgp(String cgp)
+  {
+     return cgp; 
+  }
+
+
 
 }
