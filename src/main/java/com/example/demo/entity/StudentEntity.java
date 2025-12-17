@@ -1,63 +1,52 @@
 package com.example.demo.entity;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-
 @Entity
-public class StudentEntity{
+public class StudentEntity {
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+    private float cgpa;
 
-  private Long id;
-  private String  name;
-  private String email;
-  private int age; 
+    public StudentEntity(Long id, String name, String email, float cgpa) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.cgpa = cgpa;
+    }
 
-  StudentEntity(Long id , String name , String email , int age)
-  {
-  this.id = id;
-  this.name = name;
-  this.email = email;
-  this.age = age; 
+    public StudentEntity() {
+        
+    }
 
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public String getName() {
+        return this.name;
+    }
 
-  public void setName(String name)
-  {
-  this.name = name; 
-  }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
+    public String getEmail() {
+        return this.email;
+    }
 
-  public void setEmail(String Email)
-  {
-  this.email = email; 
-  }
+    public void setCgpa(float cgpa) {
+        this.cgpa = cgpa;
+    }
 
-
-  public void setAge(int age)
-  {
-  this.age = age; 
-  }
-  
-  public String getName(String name)
-  {
-     return name; 
-  }
-    
-  public String getEmail(String email)
-  {
-     return email; 
-  }
-  
-  public int getAge(int age)
-  {
-     return age; 
-  }
-
-
-
+    public float getCgpa() {
+        return this.cgpa;
+    }
 }
