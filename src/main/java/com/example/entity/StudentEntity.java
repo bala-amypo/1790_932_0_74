@@ -43,19 +43,19 @@ public class StudentEntity{
   this.cgp = cgp; 
   }
   
-  public void getname(String name)
+  public void getName(String name)
   {
      return name; 
   }
     
-  public void getemail(String email)
+  public void getEmail(String email)
   {
      return email; 
   }
   
-  public void getcgp(String cgp)
+  public void getCgp(float age)
   {
-     return cgp; 
+     return age; 
   }
 
 
