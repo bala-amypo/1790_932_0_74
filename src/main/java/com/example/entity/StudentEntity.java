@@ -53,7 +53,7 @@ public class StudentEntity{
      return email; 
   }
   
-  public void getAge(int age)
+  public int getAge(int age)
   {
      return age; 
   }
