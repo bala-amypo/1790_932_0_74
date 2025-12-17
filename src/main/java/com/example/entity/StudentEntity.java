@@ -14,14 +14,14 @@ public class StudentEntity{
   private Long id;
   private String  name;
   private String email;
-  private float cgp; 
+  private int age; 
 
-  StudentEntity(Long id , String name , String email , float cgp)
+  StudentEntity(Long id , String name , String email , int age)
   {
   this.id = id;
   this.name = name;
   this.email = email;
-  this.cgp = cgp; 
+  this.age = age; 
 
   }
 
@@ -38,9 +38,9 @@ public class StudentEntity{
   }
 
 
-  public void setcgp(String cgp)
+  public void setage(int age)
   {
-  this.cgp = cgp; 
+  this.age = age; 
   }
   
   public void getName(String name)
@@ -53,7 +53,7 @@ public class StudentEntity{
      return email; 
   }
   
-  public void getCgp(float age)
+  public void getAge(int age)
   {
      return age; 
   }
