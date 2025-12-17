@@ -48,7 +48,7 @@ public class StudentEntity{
      return name; 
   }
     
-  public Srt getEmail(String email)
+  public String getEmail(String email)
   {
      return email; 
   }
