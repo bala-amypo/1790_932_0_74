@@ -2,19 +2,20 @@ package com.example.demo.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.id;
+import jakarta.persistence.Id;
 
 
 @Entity
 public class StudentEntity{
 
-  @id
+  @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-  private int id;
+  private Long id;
   private String  name;
   private String email;
-  private int age; 
+  private float cgp; 
 
   StudentEntity()
+
 }
