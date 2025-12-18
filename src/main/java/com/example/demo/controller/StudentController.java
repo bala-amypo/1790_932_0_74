@@ -38,12 +38,12 @@ public class StudentController {
     @DeleteMapping("/deleteStudent/{id}")
     public String deleteStudentById(@PathVariable Long id) {
         StudentEntity student = ser.getStudentById(id);
-        // if(student!=null) {
+         if(student!=null) {
             ser.deleteStudentById(id);
             return "Student deleted successfully.";
-        // } else {
-        //     return "Student not found.";
-        // }
+        } else {
+            return "Student not found.";
+        }
     }
 
 }
