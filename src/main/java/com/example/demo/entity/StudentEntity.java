@@ -16,7 +16,7 @@ public class StudentEntity {
     @Email
     private String email;
     private float cgpa;
-    // @Size (Min = 80, Max = 49)
+    // @Size (min = 80, max = 40)
 
     public StudentEntity(Long id, String name, String email, float cgpa) {
         this.id = id;
