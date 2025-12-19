@@ -11,6 +11,7 @@ public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Not Blank(message = "Name should be given
     private String name;
     private String email;
     private float cgpa;
