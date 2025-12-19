@@ -11,10 +11,12 @@ public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Not Blank(message = "Name should be given
+    @Not Blank(message = "Name should be given")
     private String name;
+    @Email
     private String email;
     private float cgpa;
+    // @Size (Min = 80, Max = 49)
 
     public StudentEntity(Long id, String name, String email, float cgpa) {
         this.id = id;
